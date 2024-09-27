@@ -99,9 +99,9 @@
     class="fixed bottom-0 z-10 transition-transform duration-500 tasks-pop rounded-t-3xl max-h-[578px] h-full"
     :class="task ? 'translate-y-0' : 'translate-y-full'"
   >
-    <div class="flex items-center px-5 mt-5 text-4xl">
+    <div class="flex items-center px-5 mt-5 text-4xl max-xs:text-3xl w-full">
       <img src="@/assets/img/arrow.png" class="w-5" @click="toggleTask" />
-      <span class="flex justify-center flex-grow">Follow our Instagram</span>
+      <span class="flex justify-center flex-grow pl-2 ">Follow our Instagram</span>
     </div>
     <div class="flex flex-col items-center gap-5 mt-12">
       <img src="@/assets/img/instagram.png " class="w-[154px]" />
