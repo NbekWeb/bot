@@ -4,7 +4,7 @@ import { RouterLink, RouterView } from "vue-router";
 
 <template>
   <div
-    class="relative flex flex-col justify-between h-screen min-h-screen overflow-y-hidden main-fon"
+    class="relative flex flex-col justify-between h-screen min-h-screen !overflow-y-hidden main-fon "
   >
     <router-view class="flex-grow " />
     <div class="fixed w-full mx-auto max-w-374 bottom-7 min-h-20 left-1/2 transform -translate-x-1/2 max-xs:scale-90">

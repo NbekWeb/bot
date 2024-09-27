@@ -2,7 +2,7 @@
   <div class="h-calc ">
     <div class="h-full">
 
-      <div class="flex flex-col gap-10 mx-auto min-h-content !overflow-y-auto">
+      <div class="flex flex-col gap-10 mx-auto min-h-content">
         <div>
           <div class="flex justify-center w-full mb-3 mt-8">
             <div class="relative w-174">

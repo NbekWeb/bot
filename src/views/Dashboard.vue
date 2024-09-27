@@ -1,7 +1,7 @@
 <template>
   <div class="h-calc">
     <div
-      class="relative w-full mx-auto mt-8 max-w-374 overflow-y-auto min-h-content"
+      class="relative w-full mx-auto mt-8 max-w-374  min-h-content"
     >
       <router-link :to="{ name: 'LevelInfo' }">
         <div class="relative max-xs:scale-90">
