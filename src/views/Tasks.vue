@@ -62,7 +62,7 @@
           <div
             class="absolute flex items-center gap-5 text-2xl font-medium transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
           >
-            <span>Done</span>
+            <span class="font-epil">Done</span>
             <img src="@/assets/img/check.png" class="w-5" />
           </div>
         </div>
@@ -99,24 +99,26 @@
     class="fixed bottom-0 z-10 transition-transform duration-500 tasks-pop rounded-t-3xl max-h-[578px] h-full"
     :class="task ? 'translate-y-0' : 'translate-y-full'"
   >
-    <div class="flex items-center px-5 mt-5 text-4xl  w-full">
+    <div class="flex items-center px-5 mt-5 text-4xl w-full">
       <img src="@/assets/img/arrow.png" class="w-5" @click="toggleTask" />
-      <span class="flex justify-center flex-grow pl-2 font-epil">Follow our Instagram</span>
+      <span class="flex justify-center flex-grow pl-2 font-epil"
+        >Follow our Instagram</span
+      >
     </div>
     <div class="flex flex-col items-center gap-5 mt-12">
       <img src="@/assets/img/instagram.png " class="w-[154px]" />
       <div class="h-[50px] relative">
         <img src="@/assets/img/cloud-btn.png " class="h-full" />
         <span
-          class="absolute text-2xl transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2  font-epil"
+          class="absolute text-2xl transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 font-epil"
         >
           подписаться
         </span>
       </div>
-      <div class="flex items-center gap-3 text-5xl">
+      <div class="flex items-center gap-3 text-5xl font-epil">
         <span class="">+</span>
         <img src="@/assets/img/nut1.png" class="h-10" />
-        <span>100</span>
+        <span class="font-epil">100</span>
       </div>
       <div class="h-[50px] relative mt-10">
         <img src="@/assets/img/cloud-btn-white.png " class="h-full" />
@@ -164,5 +166,4 @@ onUnmounted(() => {
   width: 100%;
   height: 100%;
 }
-
 </style>

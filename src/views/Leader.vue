@@ -77,10 +77,10 @@
               <div class="flex gap-3">
                 <img class="h-13" src="@/assets/img/user.png" />
                 <div class="flex flex-col justify-between">
-                  <span class="text-2xl font-medium">@obtainer</span>
+                  <span class="text-2xl font-medium font-epil">@obtainer</span>
                   <div class="flex items-center gap-1 text-lg font-medium">
                     <img src="@/assets/img/nut1.png" class="h-5" />
-                    <span> 20184</span>
+                    <span class="font-epil"> 20184</span>
                   </div>
                 </div>
               </div>

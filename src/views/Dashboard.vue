@@ -8,7 +8,7 @@
           <img src="@/assets/img/data-bg.png" class="w-full" />
           <img src="@/assets/img/user.png" class="absolute w-24 top-7 left-8" />
           <span
-            class="absolute flex text-2xl font-medium text-white right-18 font-epil top-6 min-w-28"
+            class="absolute flex text-2xl font-epil font-medium text-white right-18 font-epil top-6 min-w-28 font-epil"
             >@obtainer</span
           >
           <span
