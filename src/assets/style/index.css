@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Epilepsy";
+  src: url("../font/EpilepsySans.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-epil {
+  font-family: "Epilepsy";
+}
+
+.ant-pagination .ant-pagination-prev ,.ant-pagination .ant-pagination-next{
+    min-width: 2px !important;
+}
+.ant-pagination .ant-pagination-prev {
+    padding-right: 4px;
+}
+.ant-pagination .ant-pagination-next{
+    padding-left: 4px;
+}
