@@ -1,9 +1,9 @@
 <template>
   <div
-    class="absolute w-full h-full mt-12 bg-black border level-info rounded-t-3xl"
+    class="absolute w-full h-full mt-8 bg-black border level-info rounded-t-3xl "
   >
-    <div class="mx-auto max-w-374">
-      <div class="flex items-center mb-5 mt-9">
+    <div class="mx-auto max-w-374  h-level max-xs:scale-90">
+      <div class="flex items-center mb-5 ">
         <router-link :to="{ name: 'Dashboard' }">
           <img src="@/assets/img/arrow.png" class="w-5" />
         </router-link>
@@ -83,7 +83,7 @@
                   <span>X2 </span>
                   <img src="@/assets/img/nut1.png" class="h-6" />
                 </div>
-                <span class="text-xs "> к добыче </span>
+                <span class="text-xs"> к добыче </span>
               </div>
             </div>
           </div>
@@ -104,7 +104,7 @@
                   <span>X3 </span>
                   <img src="@/assets/img/nut1.png" class="h-6" />
                 </div>
-                <span class="text-xs "> к добыче </span>
+                <span class="text-xs"> к добыче </span>
               </div>
             </div>
           </div>
@@ -124,5 +124,9 @@
   background-position: center;
   width: 100%;
   height: 100%;
+}
+.h-level {
+  max-height: calc(100vh - 140px);
+  overflow-y: auto;
 }
 </style>

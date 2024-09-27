@@ -1,8 +1,8 @@
 <template>
-  <div class="font-epil">
-    <div class="px-10 mx-auto">
+  <div class="font-epil h-calc" ref="scrollContainer" v-bind="$attrs">
+    <div class="max-w-374 mx-auto max-xs:scale-90 !min-h-content">
       <div>
-        <div class="flex justify-center mt-15">
+        <div class="flex justify-center mt-8">
           <img src="@/assets/img/task-big.png" class="h-50" />
         </div>
         <div class="grid w-full grid-cols-2 gap-5 mt-7">
@@ -23,7 +23,7 @@
         </div>
       </div>
       <div class="relative mt-4">
-        <img src="@/assets/img/banner-white.png" />
+        <img src="@/assets/img/banner-white.png" class="" />
         <div
           class="absolute top-0 left-0 flex items-center justify-between w-full h-full px-5"
         >
@@ -40,7 +40,7 @@
         </div>
       </div>
       <div class="relative mt-3">
-        <img src="@/assets/img/banner.png" />
+        <img src="@/assets/img/banner.png" class="w-full" />
         <div
           class="absolute top-0 left-0 flex items-center justify-between w-full h-full px-5"
         >
@@ -94,51 +94,67 @@
         </div>
       </div>
     </div>
-    <div
-      class="absolute bottom-0 z-10 transition-transform duration-500 tasks-pop rounded-t-3xl"
-      :class="task ? 'translate-y-0' : 'translate-y-full'"
-    >
-      <div class="flex items-center px-5 mt-5 text-4xl">
-        <img src="@/assets/img/arrow.png" class="w-5" @click="toggleTask" />
-        <span class="flex justify-center flex-grow">Follow our Instagram</span>
+  </div>
+  <div
+    class="fixed bottom-0 z-10 transition-transform duration-500 tasks-pop rounded-t-3xl max-h-[578px] h-full"
+    :class="task ? 'translate-y-0' : 'translate-y-full'"
+  >
+    <div class="flex items-center px-5 mt-5 text-4xl">
+      <img src="@/assets/img/arrow.png" class="w-5" @click="toggleTask" />
+      <span class="flex justify-center flex-grow">Follow our Instagram</span>
+    </div>
+    <div class="flex flex-col items-center gap-5 mt-12">
+      <img src="@/assets/img/instagram.png " class="w-[154px]" />
+      <div class="h-[50px] relative">
+        <img src="@/assets/img/cloud-btn.png " class="h-full" />
+        <span
+          class="absolute text-2xl transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+        >
+          подписаться
+        </span>
       </div>
-      <div class="flex flex-col items-center gap-5 mt-12">
-        <img src="@/assets/img/instagram.png " class="w-[154px]" />
-        <div class="h-[50px] relative">
-          <img src="@/assets/img/cloud-btn.png " class="h-full" />
-          <span
-            class="absolute text-2xl transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-          >
-            подписаться
-          </span>
-        </div>
-        <div class="flex items-center gap-3 text-5xl">
-          <span class="">+</span>
-          <img src="@/assets/img/nut1.png" class="h-10" />
-          <span>100</span>
-        </div>
-        <div class="h-[50px] relative mt-10">
-          <img src="@/assets/img/cloud-btn-white.png " class="h-full" />
-          <span
-            class="absolute text-2xl transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-          >
-            подписаться
-          </span>
-        </div>
+      <div class="flex items-center gap-3 text-5xl">
+        <span class="">+</span>
+        <img src="@/assets/img/nut1.png" class="h-10" />
+        <span>100</span>
+      </div>
+      <div class="h-[50px] relative mt-10">
+        <img src="@/assets/img/cloud-btn-white.png " class="h-full" />
+        <span
+          class="absolute text-2xl transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+        >
+          подписаться
+        </span>
       </div>
     </div>
   </div>
 </template>
 <script lang="ts" setup>
-import { ref } from "vue";
+import { ref, onMounted, onUnmounted } from "vue";
 
 const task = ref(false);
-
+const scrollContainer = ref<HTMLElement | null>(null);
 const toggleTask = () => {
   task.value = !task.value;
 };
-</script>
 
+const onScroll = () => {
+  if (task.value) {
+    task.value = false;
+  }
+};
+
+onMounted(() => {
+  if (scrollContainer.value) {
+    scrollContainer.value.addEventListener("scroll", onScroll);
+  }
+});
+onUnmounted(() => {
+  if (scrollContainer.value) {
+    scrollContainer.value.removeEventListener("scroll", onScroll);
+  }
+});
+</script>
 <style scoped>
 .tasks-pop {
   background-image: url("@/assets/img/task-pop.png");
@@ -147,6 +163,11 @@ const toggleTask = () => {
   background-position: center;
   width: 100%;
   height: 100%;
-  max-height: calc(100vh - 340px);
+  /* max-height: calc(100vh - 340px); */
+}
+.h-calc {
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
+  border: 2px solid red;
 }
 </style>

@@ -22,3 +22,8 @@
 .ant-pagination .ant-pagination-next{
     padding-left: 4px;
 }
+.h-calc {
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
+  border: 2px solid red;
+}

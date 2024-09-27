@@ -3,6 +3,8 @@ import Dashboard from '@/views/Dashboard.vue';
 import LevelInfo from '@/views/LevelInfo.vue';
 import Leader from '@/views/Leader.vue';
 import Tasks from '@/views/Tasks.vue';
+import Friends from '@/views/Friends.vue';
+import Cash from '@/views/Cash.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -27,7 +29,17 @@ const router = createRouter({
       name: 'Tasks',
       component: Tasks
     },
-
+    {
+      path: '/friends',
+      name: 'Friends',
+      component: Friends
+    },
+    {
+      path: '/cash',
+      name: 'Cash',
+      component: Cash
+    },
+    
 
   ]
 })

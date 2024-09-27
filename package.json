@@ -9,12 +9,14 @@
     "preview": "vite preview",
     "build-only": "vite build",
     "type-check": "vue-tsc --build --force"
+    
   },
   "dependencies": {
     "ant-design-vue": "^4.2.5",
     "vue": "^3.4.29",
     "vue-router": "^4.3.3"
   },
+  
   "devDependencies": {
     "@tsconfig/node20": "^20.1.4",
     "@types/node": "^20.14.5",

@@ -6,9 +6,8 @@ import { RouterLink, RouterView } from "vue-router";
   <div
     class="relative flex flex-col justify-between h-screen min-h-screen overflow-y-hidden main-fon"
   >
-    <span></span>
-    <router-view class="flex-grow" />
-    <div class="relative w-full mx-auto max-w-374 mb-7 min-h-20">
+    <router-view class="flex-grow " />
+    <div class="fixed w-full mx-auto max-w-374 bottom-7 min-h-20 left-1/2 transform -translate-x-1/2 max-xs:scale-90">
       <img
         src="@/assets/img/tab-bg.png"
         class="absolute top-0 left-0 w-full h-20"
@@ -25,11 +24,11 @@ import { RouterLink, RouterView } from "vue-router";
         <router-link :to="{ name: 'Dashboard' }">
           <img src="@/assets/img/dashboard.png" class="w-10" />
         </router-link>
-        <router-link to="">
+        <router-link :to="{ name: 'Friends' }">
           <img src="@/assets/img/friends.png" class="w-10" />
         </router-link>
 
-        <router-link to="">
+        <router-link :to="{ name: 'Cash' }">
           <img src="@/assets/img/cash.png" class="w-10" />
         </router-link>
       </div>
