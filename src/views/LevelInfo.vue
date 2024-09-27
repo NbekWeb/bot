@@ -1,9 +1,9 @@
 <template>
   <div
-    class=" w-full h-full mt-8 bg-black border level-info rounded-t-3xl "
+    class="w-full h-full mt-8 bg-black border level-info rounded-t-3xl overflow-x-hidden"
   >
-    <div class="mx-auto max-w-374  h-level max-xs:scale-90 start-scale">
-      <div class="flex items-center mb-5 ">
+    <div class="mx-auto max-w-374 h-level max-xs:scale-90 start-scale">
+      <div class="flex items-center mb-5">
         <router-link :to="{ name: 'Dashboard' }">
           <img src="@/assets/img/arrow.png" class="w-5" />
         </router-link>
@@ -11,7 +11,7 @@
           <span class="text-4xl font-medium font-epil"> lvl info </span>
         </div>
       </div>
-      <div class="relative">
+      <div class="relative start-scale max-xs:scale-90">
         <img src="@/assets/img/data-bg.png" class="w-full" />
         <img src="@/assets/img/user.png" class="absolute w-24 top-7 left-8" />
         <span
@@ -23,7 +23,7 @@
           >level #2</span
         >
       </div>
-      <div class="mt-5 grid grid-cols-2 gap-1.5">
+      <div class="mt-5 grid grid-cols-2 gap-1.5 start-scale max-xs:scale-90">
         <div class="relative">
           <img src="@/assets/img/cloud-btn.png" class="w-full" />
           <div class="absolute flex items-center gap-4 top-4 left-8">
@@ -39,7 +39,7 @@
           </div>
         </div>
       </div>
-      <div class="relative mt-8">
+      <div class="relative mt-8 start-scale max-xs:scale-90">
         <img src="@/assets/img/banner.png" class="w-full" />
         <div
           class="absolute left-0 flex items-center gap-2.5 w-full mx-4 pr-7 bottom-7"
@@ -66,7 +66,7 @@
       <div class="mt-5">
         <h2 class="text-4xl font-medium text-center font-epil">Об уровнях</h2>
         <div class="mt-4">
-          <div class="relative">
+          <div class="relative start-scale max-xs:scale-90">
             <img src="@/assets/img/banner.png" class="" />
             <div
               class="absolute left-0 flex items-center justify-between w-full px-4 font-medium transform -translate-y-1/2 font-epil top-1/2"
@@ -87,7 +87,7 @@
               </div>
             </div>
           </div>
-          <div class="relative mt-5">
+          <div class="relative mt-5 start-scale max-xs:scale-90">
             <img src="@/assets/img/banner.png" class="" />
             <div
               class="absolute left-0 flex items-center justify-between w-full px-4 font-medium transform -translate-y-1/2 font-epil top-1/2"
