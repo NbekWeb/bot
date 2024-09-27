@@ -163,11 +163,6 @@ onUnmounted(() => {
   background-position: center;
   width: 100%;
   height: 100%;
-  /* max-height: calc(100vh - 340px); */
 }
-.h-calc {
-  max-height: calc(100vh - 120px);
-  overflow-y: auto;
-  border: 2px solid red;
-}
+
 </style>
