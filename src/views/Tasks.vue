@@ -108,7 +108,7 @@
       <div class="h-[50px] relative">
         <img src="@/assets/img/cloud-btn.png " class="h-full" />
         <span
-          class="absolute text-2xl transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+          class="absolute text-2xl transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2  font-epil"
         >
           подписаться
         </span>
@@ -121,7 +121,7 @@
       <div class="h-[50px] relative mt-10">
         <img src="@/assets/img/cloud-btn-white.png " class="h-full" />
         <span
-          class="absolute text-2xl transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+          class="absolute text-2xl transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 font-epil"
         >
           подписаться
         </span>
