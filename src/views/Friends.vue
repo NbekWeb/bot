@@ -60,7 +60,7 @@
               </div>
             </div>
           </div>
-          <div class="relative mb-5 mt-20">
+          <div class="relative mb-5 mt-20 max-xs:scale-90">
             <img src="@/assets/img/banner-white.png" class="w-full h-auto" />
             <div
               class="absolute top-0 left-0 flex items-center justify-between w-full h-full px-5"
@@ -68,7 +68,7 @@
               <div class="flex h-full text-3xl font-medium items-center gap-3">
                 <span> Пригласить Друга</span>
               </div>
-              <div class="flex items-center gap-2 text-2xl font-medium">
+              <div class="flex items-center gap-2 text-2xl font-medium ">
                 <img src="@/assets/img/e-link.png" class="h-6" />
               </div>
             </div>
