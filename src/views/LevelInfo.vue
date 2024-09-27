@@ -1,8 +1,8 @@
 <template>
   <div
-    class="absolute w-full h-full mt-8 bg-black border level-info rounded-t-3xl "
+    class=" w-full h-full mt-8 bg-black border level-info rounded-t-3xl "
   >
-    <div class="mx-auto max-w-374  h-level max-xs:scale-90">
+    <div class="mx-auto max-w-374  h-level max-xs:scale-90 start-scale">
       <div class="flex items-center mb-5 ">
         <router-link :to="{ name: 'Dashboard' }">
           <img src="@/assets/img/arrow.png" class="w-5" />

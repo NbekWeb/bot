@@ -14,7 +14,7 @@
               </span>
             </div>
           </div>
-          <div class="flex flex-col items-center max-xs:scale-90">
+          <div class="flex flex-col items-center max-xs:scale-90 start-scale">
             <div class="flex flex-col w-full gap-2">
               <span class="text-2xl font-epil">Неделя:</span>
               <a-pagination
@@ -68,7 +68,7 @@
             </div>
           </div>
         </div>
-        <div class="pb-5 max-xs:scale-90">
+        <div class="pb-5 max-xs:scale-90 start-scale">
           <div class="relative w-full max-h-19">
             <img src="@/assets/img/banner-white.png" class="w-full" />
             <div

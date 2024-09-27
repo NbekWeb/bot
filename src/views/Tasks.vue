@@ -1,6 +1,6 @@
 <template>
   <div class="font-epil h-calc" ref="scrollContainer" v-bind="$attrs">
-    <div class="max-w-374 mx-auto max-xs:scale-90 !min-h-content">
+    <div class="max-w-374 mx-auto max-xs:scale-90 start-scale !min-h-content">
       <div>
         <div class="flex justify-center mt-8">
           <img src="@/assets/img/task-big.png" class="h-50" />

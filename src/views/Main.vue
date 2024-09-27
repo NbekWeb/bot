@@ -2,9 +2,10 @@
   <div
     class="relative flex flex-col justify-between h-full min-h-screen !overflow-y-hidden main-fon"
   >
+  <slot></slot>
     <RouterView class="flex-grow mx-auto" />
     <div
-      class="fixed w-full mx-auto max-w-374 bottom-7 min-h-20 left-1/2 transform -translate-x-1/2 max-xs:scale-90"
+      class="fixed w-full mx-auto max-w-374 bottom-7 min-h-20 left-1/2 left-none transform -translate-x-1/2 max-xs:scale-90 start-scale"
     >
       <img
         src="@/assets/img/tab-bg.png"

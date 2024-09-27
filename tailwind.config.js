@@ -22,6 +22,9 @@ module.exports = {
       fontSize: {
         xs: ["12px", "1"],
       },
+      scale: {
+        60: '0.6', 
+      },
       screens: {
         'xs': '400px', 
       },

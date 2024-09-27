@@ -60,7 +60,7 @@
               </div>
             </div>
           </div>
-          <div class="relative mb-5 mt-20 max-xs:scale-90">
+          <div class="relative mb-5 mt-20 max-xs:scale-90 start-scale">
             <img src="@/assets/img/banner-white.png" class="w-full h-auto" />
             <div
               class="absolute top-0 left-0 flex items-center justify-between w-full h-full px-5"

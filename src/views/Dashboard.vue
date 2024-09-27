@@ -4,7 +4,7 @@
       class="relative w-full mx-auto mt-8 max-w-374  min-h-content"
     >
       <router-link :to="{ name: 'LevelInfo' }">
-        <div class="relative max-xs:scale-90">
+        <div class="relative max-xs:scale-90 start-scale">
           <img src="@/assets/img/data-bg.png" class="w-full" />
           <img src="@/assets/img/user.png" class="absolute w-24 top-7 left-8" />
           <span
@@ -17,7 +17,7 @@
           >
         </div>
       </router-link>
-      <div class="mt-5 grid grid-cols-2 gap-1.5 max-xs:scale-90">
+      <div class="mt-5 grid grid-cols-2 gap-1.5 max-xs:scale-90 start-scale">
         <div class="relative">
           <img src="@/assets/img/cloud-btn.png" class="w-full" />
           <div class="absolute flex items-center gap-4 top-4 left-8">
@@ -33,7 +33,7 @@
           </div>
         </div>
       </div>
-      <div class="flex items-center justify-between mt-7 max-xs:scale-90">
+      <div class="flex items-center justify-between mt-7 max-xs:scale-90 start-scale">
         <div class="relative h-42 w-42">
           <img src="@/assets/img/big-btn-bg.png" class="w-full h-full" />
           <img
