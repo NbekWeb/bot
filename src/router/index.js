@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Dashboard from '@/views/Dashboard.vue';
+import Dashboard from '@/views/DashboardComp.vue';
 import LevelInfo from '@/views/LevelInfo.vue';
 import Leader from '@/views/Leader.vue';
 import Tasks from '@/views/Tasks.vue';

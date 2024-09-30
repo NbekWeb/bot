@@ -1,9 +1,9 @@
 <template>
   <div
-    class="start w-full h-screen overflow-y-hidden flex flex-col justify-between"
+    class="flex flex-col justify-between w-full h-screen overflow-y-hidden start"
   >
-    <div class="mt-10 flex flex-col gap-8 items-center">
-      <span class="text-white font-epil text-2xl">Делай то-то и то-то</span>
+    <div class="flex flex-col items-center gap-8 mt-10">
+      <span class="text-2xl text-white font-epil">Делай то-то и то-то</span>
 
       <div class="">
         <main-vue class="rounded-2xl relative !scale-60 -my-44">
@@ -13,11 +13,11 @@
         </main-vue>
       </div>
       <!-- {{ step }}  -->
-      <span class="text-white font-epil text-2xl max-w-60"
+      <span class="text-2xl text-white font-epil max-w-60"
         >У нас вы можете первое, второе и третье.</span
       >
     </div>
-    <div class="flex justify-center pb-14 gap-10 items-center">
+    <div class="flex items-center justify-center gap-10 pb-14">
       <img
         src="@/assets/img/arrow.png"
         class="w-5"
@@ -26,7 +26,7 @@
       />
       <router-link :to="{ name: 'Dashboard' }" class="relative">
         <img src="@/assets/img/cloud-btn.png" class="h-15" />
-        <span class="absolute top-4 left-14 text-3xl text-black font-epil"
+        <span class="absolute text-3xl text-black top-4 left-14 font-epil"
           >Начать</span
         >
       </router-link>
@@ -42,9 +42,9 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from "vue-router";
 import { ref } from "vue";
-import MainVue from "./Main.vue";
-import Dashboard from "./Dashboard.vue";
-import Friends from "./Friends.vue";
+import MainVue from "@/views/Main.vue";
+import Dashboard from "@/views/DashboardComp.vue";
+import Friends from "@/views/Friends.vue";
 import LevelInfo from '@/views/LevelInfo.vue';
 
 const step = ref(0);
