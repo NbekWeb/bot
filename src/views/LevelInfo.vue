@@ -23,7 +23,7 @@
           >level #2</span
         >
       </div>
-      <div class="mt-5 grid grid-cols-2 gap-1.5 start-scale max-xs:scale-90">
+      <div class="mt-5 grid grid-cols-2 gap-1.5 start-scale max-xs:scale-90 ">
         <div class="relative">
           <img src="@/assets/img/cloud-btn.png" class="w-full" />
           <div class="absolute flex items-center gap-4 top-4 left-8">
@@ -39,10 +39,10 @@
           </div>
         </div>
       </div>
-      <div class="relative mt-8 start-scale max-xs:scale-90">
+      <div class="relative mt-8 start-scale max-xs:scale-90  w-full ">
         <img src="@/assets/img/banner.png" class="w-full" />
         <div
-          class="absolute left-0 flex items-center gap-2.5 w-full mx-4 pr-7 bottom-7"
+          class="absolute left-0 flex items-center gap-2.5 w-full px-4 pr-7 bottom-7"
         >
           <img src="@/assets/img/arrow.png" class="h-5" />
           <div
@@ -127,6 +127,7 @@
 }
 .h-level {
   max-height: calc(100vh - 140px);
+  height: calc(100vh - 140px);
   overflow-y: auto;
 }
 </style>
