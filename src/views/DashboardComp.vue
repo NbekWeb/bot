@@ -49,7 +49,7 @@
           />
         </div>
       </div>
-      <div class="flex justify-center w-full mt-10">
+      <div class="flex justify-center w-full mt-8">
         <img src="@/assets/img/start.gif" class="h-40" />
       </div>
     </div>
