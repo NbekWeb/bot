@@ -52,7 +52,7 @@
         </div>
       </div>
     </div>
-      <div class="flex justify-center w-full pb-5">
+      <div class="flex justify-center w-full pb-5 start-bot">
         <img src="@/assets/img/start.gif" class="h-32" />
       </div>
     </div>
