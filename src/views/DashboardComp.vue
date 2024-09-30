@@ -52,7 +52,7 @@
         </div>
       </div>
     </div>
-      <div class="flex justify-center w-full pb-3">
+      <div class="flex justify-center w-full pb-5">
         <img src="@/assets/img/start.gif" class="h-32" />
       </div>
     </div>

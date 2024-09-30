@@ -1,11 +1,11 @@
 <template>
-  <div class="font-epil h-calc" ref="scrollContainer" v-bind="$attrs">
-    <div class="max-w-374 mx-auto max-xs:scale-90 start-scale !min-h-content">
+  <div class="font-epil h-calc " ref="scrollContainer" v-bind="$attrs">
+    <div class="max-w-374 mx-auto max-xs:scale-90 pt-3 max-xs:-my-4 max-xs:pt-0 start-scale  h-full">
       <div>
-        <div class="flex justify-center mt-8">
-          <img src="@/assets/img/task-big.png" class="h-50" />
+        <div class="flex justify-center  ">
+          <img src="@/assets/img/task-big.png" class="h-36" />
         </div>
-        <div class="grid w-full grid-cols-2 gap-5 mt-7">
+        <div class="grid w-full grid-cols-2 gap-5 mt-4">
           <div class="relative">
             <img src="@/assets/img/banner.png" class="w-full" />
             <span
@@ -22,7 +22,7 @@
           </div>
         </div>
       </div>
-      <div class="relative mt-4">
+      <div class="relative mt-2">
         <img src="@/assets/img/banner-white.png" class="" />
         <div
           class="absolute top-0 left-0 flex items-center justify-between w-full h-full px-5"
@@ -39,7 +39,7 @@
           </div>
         </div>
       </div>
-      <div class="relative mt-3">
+      <div class="relative mt-2">
         <img src="@/assets/img/banner.png" class="w-full" />
         <div
           class="absolute top-0 left-0 flex items-center justify-between w-full h-full px-5"
@@ -55,7 +55,7 @@
           </div>
         </div>
       </div>
-      <div class="grid w-full grid-cols-2 gap-5 mt-7 justify-items-end">
+      <div class="grid w-full grid-cols-2 gap-5 mt-2 justify-items-end">
         <span></span>
         <div class="relative">
           <img src="@/assets/img/banner-white.png" class="w-full" />
@@ -67,9 +67,9 @@
           </div>
         </div>
       </div>
-      <div class="mt-3">
+      <div class="mt-1">
         <span class="text-3xl">Daily rewards</span>
-        <div class="flex flex-wrap items-center justify-between gap-5 mt-5">
+        <div class="flex flex-wrap items-center justify-between gap-x-5 gap-y-2 mt-2">
           <div class="relative w-16 h-16">
             <img src="@/assets/img/cur-level.png" class="w-full" />
             <img

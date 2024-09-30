@@ -128,6 +128,6 @@
 .h-level {
   max-height: calc(100vh - 140px);
   height: calc(100vh - 140px);
-  overflow-y: auto;
+  overflow-y: hidden;
 }
 </style>

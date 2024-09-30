@@ -4,7 +4,7 @@
 
       <div class="flex flex-col gap-10 mx-auto min-h-content">
         <div>
-          <div class="flex justify-center w-full mb-3 mt-8">
+          <div class="flex justify-center w-full mb-3 pt-3">
             <div class="relative w-174">
               <img src="@/assets/img/cloud-btn.png" class="w-full" />
               <span
@@ -39,7 +39,7 @@
             </div>
             <div class="flex flex-col w-full gap-2 mt-5 font-epil">
               <span class="text-2xl font-epil">Рейтинг:</span>
-              <div class="flex flex-col w-full gap-5">
+              <div class="flex flex-col w-full gap-3">
                 <div class="relative w-full max-h-19" v-for="i of 3" :key="i">
                   <img src="@/assets/img/banner.png" class="w-full" />
                   <div
@@ -61,8 +61,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="flex justify-center mt-2">
-                  <img src="@/assets/img/arrow.png" class="w-5 -rotate-90" />
+                <div class="flex justify-center mt-1">
+                  <img src="@/assets/img/arrow.png" class="w-4 -rotate-90" />
                 </div>
               </div>
             </div>

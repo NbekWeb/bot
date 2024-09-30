@@ -45,7 +45,7 @@ import { ref } from "vue";
 import MainVue from "@/views/Main.vue";
 import Dashboard from "@/views/DashboardComp.vue";
 import Friends from "@/views/Friends.vue";
-import LevelInfo from '@/views/LevelInfo.vue';
+import LevelInfo from "@/views/LevelInfo.vue";
 
 const step = ref(0);
 

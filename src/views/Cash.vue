@@ -1,9 +1,9 @@
 <template>
   <div class="font-epil max-w-374 mx-auto px-6">
     <div class="flex justify-center mt-8">
-      <img src="@/assets/img/ScratIcon.png" class="h-50" />
+      <img src="@/assets/img/ScratIcon.png" class="h-36" />
     </div>
-    <div class="mt-10 relative">
+    <div class="mt-6 relative">
       <img src="@/assets/img/st-btn.png" class="w-full" />
       <span
         class="absolute text-xl font-medium transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-full w-full px-7"
@@ -11,7 +11,7 @@
         друзей</span
       >
     </div>
-    <div class="flex justify-center w-full mt-5">
+    <div class="flex justify-center w-full mt-4">
       <div class="h-[50px] relative">
         <img src="@/assets/img/cloud-btn.png " class="h-full" />
         <span
@@ -21,7 +21,7 @@
         </span>
       </div>
     </div>
-    <div class="relative mt-5">
+    <div class="relative mt-4">
       <img src="@/assets/img/banner.png" class="w-full" />
       <div
         class="flex items-center justify-between w-full px-4 absolute text-2xl font-medium transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
