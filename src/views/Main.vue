@@ -3,7 +3,7 @@
     class="relative flex flex-col justify-between h-full min-h-screen !overflow-y-hidden main-fon"
   >
   <slot></slot>
-    <RouterView class="flex-grow mx-auto border border-black" />
+    <RouterView class="flex-grow mx-auto " />
     <div
       class="fixed  w-full mx-auto max-w-374 bottom-2 min-h-20 left-1/2 left-none transform -translate-x-1/2 max-xs:scale-90 start-scale"
     >

@@ -1,8 +1,10 @@
 <template>
   <div class="h-calc">
     <div
-      class="relative w-full mx-auto mt-3 max-w-374 min-h-content"
+      class="relative w-full mx-auto pt-3 max-w-374 min-h-content flex flex-col justify-between h-full"
     >
+    <div>
+
       <router-link :to="{ name: 'LevelInfo' }">
         <div class="relative max-xs:scale-90 start-scale">
           <img src="@/assets/img/data-bg.png" class="w-full" />
@@ -17,7 +19,7 @@
           >
         </div>
       </router-link>
-      <div class="mt-2 grid grid-cols-2 gap-1.5 max-xs:scale-90 start-scale">
+      <div class="mt-2 grid grid-cols-2 gap-6 max-xs:scale-90 start-scale">
         <div class="relative">
           <img src="@/assets/img/cloud-btn.png" class="w-full" />
           <div class="absolute flex items-center gap-4 top-4 left-8">
@@ -33,24 +35,25 @@
           </div>
         </div>
       </div>
-      <div class="flex items-center justify-between mt-3 max-xs:scale-90 start-scale">
+      <div class="flex items-center justify-between mt-2 max-xs:scale-90 start-scale">
         <div class="relative h-40 w-40">
           <img src="@/assets/img/big-btn-bg.png" class="w-full h-full" />
           <img
             src="@/assets/img/chest.png"
-            class="absolute top-8 left-8 w-26 h-26"
+            class="absolute top-8 left-8 w-24 h-24"
           />
         </div>
         <div class="relative h-40 w-40">
           <img src="@/assets/img/big-btn-bg.png" class="w-full h-full" />
           <img
             src="@/assets/img/scrat.png"
-            class="absolute top-8 left-8 w-26 h-26"
+            class="absolute top-8 left-8 w-24 h-24"
           />
         </div>
       </div>
-      <div class="flex justify-center w-full mt-8">
-        <img src="@/assets/img/start.gif" class="h-36" />
+    </div>
+      <div class="flex justify-center w-full pb-3">
+        <img src="@/assets/img/start.gif" class="h-32" />
       </div>
     </div>
   </div>
