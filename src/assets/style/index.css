@@ -24,5 +24,5 @@
 }
 .h-calc {
   max-height: calc(100vh - 84px);
-  overflow-y: auto;
+  overflow-y: hidden;
 }
