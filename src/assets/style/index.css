@@ -23,6 +23,6 @@
     padding-left: 4px;
 }
 .h-calc {
-  max-height: calc(100vh - 120px);
+  max-height: calc(100vh - 84px);
   overflow-y: auto;
 }

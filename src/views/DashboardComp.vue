@@ -1,7 +1,7 @@
 <template>
   <div class="h-calc">
     <div
-      class="relative w-full mx-auto mt-4 max-w-374 min-h-content"
+      class="relative w-full mx-auto mt-3 max-w-374 min-h-content"
     >
       <router-link :to="{ name: 'LevelInfo' }">
         <div class="relative max-xs:scale-90 start-scale">
@@ -33,15 +33,15 @@
           </div>
         </div>
       </div>
-      <div class="flex items-center justify-between mt-4 max-xs:scale-90 start-scale">
-        <div class="relative h-42 w-42">
+      <div class="flex items-center justify-between mt-3 max-xs:scale-90 start-scale">
+        <div class="relative h-40 w-40">
           <img src="@/assets/img/big-btn-bg.png" class="w-full h-full" />
           <img
             src="@/assets/img/chest.png"
             class="absolute top-8 left-8 w-26 h-26"
           />
         </div>
-        <div class="relative h-42 w-42">
+        <div class="relative h-40 w-40">
           <img src="@/assets/img/big-btn-bg.png" class="w-full h-full" />
           <img
             src="@/assets/img/scrat.png"
@@ -50,7 +50,7 @@
         </div>
       </div>
       <div class="flex justify-center w-full mt-8">
-        <img src="@/assets/img/start.gif" class="h-40" />
+        <img src="@/assets/img/start.gif" class="h-36" />
       </div>
     </div>
   </div>
