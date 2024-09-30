@@ -6,7 +6,7 @@
       <span class="text-2xl text-white font-epil">Делай то-то и то-то</span>
 
       <div class="">
-        <main-vue class="rounded-2xl relative !scale-60 -my-44">
+        <main-vue class="rounded-2xl relative !scale-60 -my-40">
           <Dashboard v-if="step == 0" />
           <Friends v-else-if="step == 1" />
           <LevelInfo v-else />
