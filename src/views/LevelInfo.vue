@@ -1,13 +1,13 @@
 <template>
   <div
-    class="w-full h-full mt-8 bg-black border level-info rounded-t-3xl overflow-x-hidden"
+    class="w-full h-full mt-3  level-info rounded-t-3xl overflow-x-hidden pb-3"
   >
     <div class="mx-auto max-w-374 h-level max-xs:scale-90 start-scale">
-      <div class="flex items-center mb-5">
+      <div class="flex items-center mb-3 pt-2">
         <router-link :to="{ name: 'Dashboard' }">
           <img src="@/assets/img/arrow.png" class="w-5" />
         </router-link>
-        <div class="flex justify-center flex-grow">
+        <div class="flex justify-center flex-grow ">
           <span class="text-4xl font-medium font-epil"> lvl info </span>
         </div>
       </div>
@@ -23,7 +23,7 @@
           >level #2</span
         >
       </div>
-      <div class="mt-5 grid grid-cols-2 gap-1.5 start-scale max-xs:scale-90 ">
+      <div class="mt-3 grid grid-cols-2 gap-1.5 start-scale max-xs:scale-90 ">
         <div class="relative">
           <img src="@/assets/img/cloud-btn.png" class="w-full" />
           <div class="absolute flex items-center gap-4 top-4 left-8">
@@ -39,7 +39,7 @@
           </div>
         </div>
       </div>
-      <div class="relative mt-8 start-scale max-xs:scale-90  w-full ">
+      <div class="relative mt-4 start-scale max-xs:scale-90  w-full ">
         <img src="@/assets/img/banner.png" class="w-full" />
         <div
           class="absolute left-0 flex items-center gap-2.5 w-full px-4 pr-7 bottom-7"
@@ -63,9 +63,9 @@
           <img src="@/assets/img/arrow.png" class="h-5 rotate-180" />
         </div>
       </div>
-      <div class="mt-5">
-        <h2 class="text-4xl font-medium text-center font-epil">Об уровнях</h2>
-        <div class="mt-4">
+      <div class="mt-2">
+        <h2 class="text-3xl font-medium text-center font-epil">Об уровнях</h2>
+        <div class="mt-2">
           <div class="relative start-scale max-xs:scale-90">
             <img src="@/assets/img/banner.png" class="" />
             <div
@@ -87,7 +87,7 @@
               </div>
             </div>
           </div>
-          <div class="relative mt-5 start-scale max-xs:scale-90">
+          <div class="relative mt-2 start-scale max-xs:scale-90">
             <img src="@/assets/img/banner.png" class="" />
             <div
               class="absolute left-0 flex items-center justify-between w-full px-4 font-medium transform -translate-y-1/2 font-epil top-1/2"
@@ -126,8 +126,9 @@
   height: 100%;
 }
 .h-level {
-  max-height: calc(100vh - 140px);
-  height: calc(100vh - 140px);
+  max-height: calc(100vh - 120px);
+  height: calc(100vh - 120px);
   overflow-y: hidden;
+  /* border: 1px solid red; */
 }
 </style>
